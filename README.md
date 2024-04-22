@@ -1,4 +1,4 @@
-Im make this application to study recycler view and sqlite as offline database in the applications Android.
+Im make this application to study recycler view and sqlite as offline database in Android app.
 In this project, add a task and it will go to the database, and when dragging the task to the right, it deletes its task, clicking on the task, it crosses out its task, this all persists on the cell phone due to sqlite, so even when exit the app, the information is still there when you return to the app.
 
 
