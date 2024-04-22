@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutRelative"
+
+    android:background="@drawable/wallpaper"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@color/black"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wallpaper"
+            android:paddingTop="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/grayLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="gone" />
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="312dp"
+            android:layout_height="49dp"
+            android:background="@drawable/rounded"
+            android:ems="10"
+            android:hint="Adiciona sua tarefa..."
+            android:inputType="text"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.351" />
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="155dp"
+            android:layout_height="51dp"
+            android:backgroundTint="@color/orange"
+
+            android:text="Adicionar"
+            android:visibility="gone"
+            app:cornerRadius="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputText"
+            app:layout_constraintVertical_bias="0.173" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/orange"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+
+</RelativeLayout>
